@@ -100,12 +100,12 @@ setInterval(async() => {
     // building the embed that will be posted
     const HMEmbed = new Discord.MessageEmbed()
 	.setTitle( title )
-	.setDescription( '[news] ' + HTTPlink + ' new repost ' )
-	          .setColor('#0099ff')
-	.addField('title', 'recent news reposted on [link](https://lbry.tv/'+ yourLBRYchannelURL +') @neonews', dateutc, true)
+	.setDescription( 'Nuevo reposteo: ' + HTTPlink )
+	          .setColor('#ed196b')
+	.addField('Título', 'noticias recientes reposteadas en el siguiente [link](https://odysee.com/'+ yourLBRYchannelURL +'), canal de Michael Mitnick, en Odysee.', dateutc, true)
 	.setTimestamp()
 	.setImage( image)
-	.setFooter('Source : lbry://'+ yourLBRYchannelURL +' ', 'https://bitcoinwisdom.io/apple-touch-icon-180x180.png');
+	.setFooter('Fuente: lbry://'+ yourLBRYchannelURL +' ', 'https://odysee.com/public/favicon.png');
     client.channels.cache.get(config.channelid).send(HMEmbed);
     last_posted_timestamp = timestamp;
     let jsonline ={ 
@@ -162,10 +162,10 @@ client.on("message", async message => {
 
    // building the embed that will be posted
    const HMEmbed = new Discord.MessageEmbed()
-	.setColor('#0099ff')
-	.addField('title', 'recent news reposted on [link](https://lbry.tv/'+ yourLBRYchannelURL +') @neonews', dateutc, true)
+	.setColor('#ed196b')
+	.addField('Título', 'noticias recientes reposteadas en el siguiente [link](https://odysee.com/'+ yourLBRYchannelURL +'), canal de Michael Mitnick, en Odysee.', dateutc, true)
 	.setTimestamp()
-	.setFooter('Source : lbry://'+ yourLBRYchannelURL +' ', 'https://bitcoinwisdom.io/apple-touch-icon-180x180.png');
+	.setFooter('Fuente: lbry://'+ yourLBRYchannelURL +' ', 'https://odysee.com/public/favicon.png');
    message.channel.send(HMEmbed);
   }
  

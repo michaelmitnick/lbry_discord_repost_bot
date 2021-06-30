@@ -1,8 +1,8 @@
 { 
-	  "token"  : "INSERT YOUR OWN DISCORD CHANNEL BOT TOKEN HERE             ",
+	  "token"  : "Aquí va el toquen de seguridad de la aplicación Discord",
 	  "prefix" : "+",
-	  "channelid" : "put your discord channel id here",
+	  "channelid" : "La ID del canal de Discord",
 	  "posteveryXmins" : "5",
-	  "yourLBRYchannelClaimId" : "6e202c3726d1225c90637a2204c696b12c746a78",
-	  "yourLBRYchannelURL" : "@neonews#6"
+	  "yourLBRYchannelClaimId" : "ID del canal en LBRY",
+	  "yourLBRYchannelURL" : "@michaelmitnick#2"
 }
